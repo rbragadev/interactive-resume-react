@@ -18,9 +18,9 @@ export const BarHeader = () => {
       ></ImagesBarHeader>
       <BlackBar src="./images/blackBar.png"></BlackBar>
       <Hpxp src="./images/HPXP.png"></Hpxp>
-      <BarButton1 src="./images/barButton.png"></BarButton1>
-      <BarButton2 src="./images/barButton.png"></BarButton2>
-      <BarButton3 src="./images/barButton.png"></BarButton3>
+      <BarButton1 src="./images/barSkills.png"></BarButton1>
+      <BarButton2 src="./images/barWorks.png"></BarButton2>
+      <BarButton3 src="./images/barProjects.png"></BarButton3>
     </Container>
   );
 };

@@ -16,14 +16,10 @@ export const ImagesHeader = styled.img`
   top: 0px;
 `;
 
-export const Rectangle = styled.div`
+export const Rectangle = styled.img`
   position: absolute;
   width: 700px;
   height: 46px;
   left: 0px;
   top: 363px;
-
-  /* --color-black-first */
-
-  background: #000000;
 `;

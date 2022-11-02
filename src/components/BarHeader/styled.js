@@ -8,6 +8,13 @@ export const Container = styled.div`
   top: 409px;
 `;
 
+export const ObjectiveText = styled.img`
+  position: absolute;
+  width: 624px;
+  height: 36px;
+  left: 41px;
+  top: 367px;
+`;
 export const ImagesBarHeader = styled.img`
   position: absolute;
   width: 700px;
