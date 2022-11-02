@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import {
   Container,
+  BarButtonSkills,
+  BarButtonWorks,
+  BarButtonProjects,
   DropsBox1,
   DropsBox2,
   DropsBox3,
-  RectanglePerson,
+  PersonPicture,
   ResumeBoard,
   ScoreBoard,
   VisorBoard,
@@ -26,18 +29,41 @@ import {
 
 export const ContentBody = () => {
   const [gBoard, setGBoard] = useState('html5');
+  const [gBlue, setGBlue] = useState('ASkills');
+  const [person, setPerson] = useState('person');
 
   const handleChangeBoard = (text) => {
     setGBoard(text.target.value);
   };
 
+  const handleChangeBlue = (text) => {
+    setGBlue(text.target.value);
+  };
+
+  const handleSetPerson = (text) => {
+    setPerson(text.target.value);
+    setGBlue(text.target.value);
+  };
+
   return (
     <Container>
+      <BarButtonSkills
+        onClick={handleChangeBlue}
+        value="ASkills"
+      ></BarButtonSkills>
+      <BarButtonWorks
+        onClick={handleChangeBlue}
+        value="AWorks"
+      ></BarButtonWorks>
+      <BarButtonProjects
+        onClick={handleChangeBlue}
+        value="AProjects"
+      ></BarButtonProjects>
       <NamePerson src="./images/namePerson.png"></NamePerson>
-      <DropsBox1 src="./images/DropsBox.png"></DropsBox1>
-      <DropsBox2 src="./images/DropsBox.png"></DropsBox2>
-      <DropsBox3 src="./images/DropsBox.png"></DropsBox3>
-      <RectanglePerson src="./images/Rectangle.png"></RectanglePerson>
+      <PersonPicture src={`./images/person/` + person + `.gif`}></PersonPicture>
+      <DropsBox1 onClick={handleSetPerson} value="person"></DropsBox1>
+      <DropsBox2 onClick={handleSetPerson} value="personNoShirt"></DropsBox2>
+      <DropsBox3 onClick={handleSetPerson} value="personNoPants"></DropsBox3>
       <ResumeBoard src="./images/QuadroResumo.png"></ResumeBoard>
       <IconHtml onClick={handleChangeBoard} value="html5"></IconHtml>
       <IconCss onClick={handleChangeBoard} value="css3"></IconCss>
@@ -52,9 +78,8 @@ export const ContentBody = () => {
       <IconReact onClick={handleChangeBoard} value="react"></IconReact>
       <IconNpm onClick={handleChangeBoard} value="npm"></IconNpm>
       <IconUnity onClick={handleChangeBoard} value="unity"></IconUnity>
-
       <ScoreBoard src={`/images/quadrosV/` + gBoard + `.png`}></ScoreBoard>
-      <VisorBoard src="./images/quadrosV/ASkills.png"></VisorBoard>
+      <VisorBoard src={`./images/quadrosV/` + gBlue + `.png`}></VisorBoard>
     </Container>
   );
 };

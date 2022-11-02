@@ -7,6 +7,47 @@ export const Container = styled.div`
   left: 0px;
   top: 453px;
   background: #757162;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const BarButtonSkills = styled.button`
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  left: 363px;
+  top: -37px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('./images/barSkills.png');
+  background-size: cover;
+`;
+
+export const BarButtonWorks = styled.button`
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  left: 465px;
+  top: -37px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('./images/barWorks.png');
+  background-size: cover;
+`;
+
+export const BarButtonProjects = styled.button`
+  position: absolute;
+  width: 90px;
+  height: 30px;
+  left: 567px;
+  top: -37px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('../images/barProjects.png');
+  background-size: cover;
 `;
 
 export const NamePerson = styled.img`
@@ -17,36 +58,51 @@ export const NamePerson = styled.img`
   top: 13px;
 `;
 
-export const DropsBox1 = styled.img`
+export const PersonPicture = styled.img`
+  position: absolute;
+  width: 152px;
+  height: 253px;
+  left: 132px;
+  top: 38px;
+`;
+
+export const DropsBox1 = styled.button`
   position: absolute;
   width: 80px;
   height: 81px;
   left: 36px;
   top: 38px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('./images/DropsBoxCoffee.png');
+  background-size: cover;
 `;
 
-export const DropsBox2 = styled.img`
+export const DropsBox2 = styled.button`
   position: absolute;
   width: 80px;
   height: 81px;
   left: 36px;
   top: 126px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('./images/DropsBoxShirt.png');
+  background-size: cover;
 `;
 
-export const DropsBox3 = styled.img`
+export const DropsBox3 = styled.button`
   position: absolute;
   width: 80px;
   height: 81px;
   left: 36px;
   top: 214px;
-`;
-
-export const RectanglePerson = styled.img`
-  position: absolute;
-  width: 157px;
-  height: 252px;
-  left: 127px;
-  top: 41px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('./images/DropsBoxPants.png');
+  background-size: cover;
 `;
 
 export const ResumeBoard = styled.img`

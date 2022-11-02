@@ -41,30 +41,6 @@ export const Hpxp = styled.img`
   top: 12px;
 `;
 
-export const BarButton1 = styled.img`
-  position: absolute;
-  width: 90px;
-  height: 30px;
-  left: 363px;
-  top: 7px;
-`;
-
-export const BarButton2 = styled.img`
-  position: absolute;
-  width: 90px;
-  height: 30px;
-  left: 465px;
-  top: 7px;
-`;
-
-export const BarButton3 = styled.img`
-  position: absolute;
-  width: 90px;
-  height: 30px;
-  left: 567px;
-  top: 7px;
-`;
-
 export const TextSkills = styled.text`
   position: absolute;
   width: 60px;
