@@ -50,6 +50,19 @@ export const BarButtonProjects = styled.button`
   background-size: cover;
 `;
 
+export const BarButtonContact = styled.button`
+  position: absolute;
+  width: 80.01px;
+  height: 26.67px;
+  left: 572px;
+  top: 5px;
+  cursor: pointer;
+  background-color: #442434;
+  border: none;
+  background-image: url('../images/barContact.png');
+  background-size: cover;
+`;
+
 export const NamePerson = styled.img`
   position: absolute;
   width: 368px;
@@ -296,6 +309,14 @@ export const VisorBoard = styled.img`
   height: 152px;
   left: 38px;
   top: 302px;
+`;
+
+export const ContactNumber = styled.img`
+  position: absolute;
+  width: 368px;
+  height: 16px;
+  left: 39px;
+  top: 473px;
 `;
 
 export const BottomBase = styled.div`

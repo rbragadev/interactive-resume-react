@@ -4,6 +4,7 @@ import {
   BarButtonSkills,
   BarButtonWorks,
   BarButtonProjects,
+  BarButtonContact,
   DropsBox1,
   DropsBox2,
   DropsBox3,
@@ -25,6 +26,7 @@ import {
   IconNpm,
   IconUnity,
   NamePerson,
+  ContactNumber,
 } from './styled.js';
 
 export const ContentBody = () => {
@@ -59,6 +61,9 @@ export const ContentBody = () => {
         onClick={handleChangeBlue}
         value="AProjects"
       ></BarButtonProjects>
+      <BarButtonContact
+        onClick={'https://linktr.ee/rbragadev'}
+      ></BarButtonContact>
       <NamePerson src="./images/namePerson.png"></NamePerson>
       <PersonPicture src={`./images/person/` + person + `.gif`}></PersonPicture>
       <DropsBox1 onClick={handleSetPerson} value="person"></DropsBox1>
@@ -80,6 +85,7 @@ export const ContentBody = () => {
       <IconUnity onClick={handleChangeBoard} value="unity"></IconUnity>
       <ScoreBoard src={`/images/quadrosV/` + gBoard + `.png`}></ScoreBoard>
       <VisorBoard src={`./images/quadrosV/` + gBlue + `.png`}></VisorBoard>
+      <ContactNumber src="./images/contactNumber.png"></ContactNumber>
     </Container>
   );
 };
