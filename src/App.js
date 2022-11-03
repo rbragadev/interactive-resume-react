@@ -5,7 +5,14 @@ import { Header } from './components/Header';
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        maxWidth: '700px',
+        width: '100vw',
+        margin: 'auto',
+        position: 'relative',
+      }}
+    >
       <Header></Header>
       <BarHeader></BarHeader>
       <ContentBody></ContentBody>
