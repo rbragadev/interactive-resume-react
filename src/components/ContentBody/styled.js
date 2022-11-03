@@ -328,3 +328,15 @@ export const BottomBase = styled.div`
 
   background: #757162;
 `;
+
+export const Modal = styled.img`
+  display: none;
+  position: absolute;
+  width: 630px;
+  height: 413px;
+  left: 29px;
+  top: 38px;
+  border: none;
+  background-image: url('./images/modal/ASkills.png');
+  background-size: cover;
+`;

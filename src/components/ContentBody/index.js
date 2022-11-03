@@ -27,12 +27,15 @@ import {
   IconUnity,
   NamePerson,
   ContactNumber,
+  Modal,
 } from './styled.js';
 
 export const ContentBody = () => {
   const [gBoard, setGBoard] = useState('html5');
   const [gBlue, setGBlue] = useState('ASkills');
   const [person, setPerson] = useState('person');
+  const [modal, setModal] = useState('');
+  const [activeModal, setActiveModal] = useState('');
 
   const handleChangeBoard = (text) => {
     setGBoard(text.target.value);
@@ -40,6 +43,18 @@ export const ContentBody = () => {
 
   const handleChangeBlue = (text) => {
     setGBlue(text.target.value);
+    setModal(text.target.value);
+    switch (gBlue) {
+      case 'AWorks':
+        setActiveModal(true);
+        break;
+      case 'AProjects':
+        setActiveModal(true);
+        break;
+      default:
+        setActiveModal(false);
+        break;
+    }
   };
 
   const handleSetPerson = (text) => {
@@ -86,6 +101,12 @@ export const ContentBody = () => {
       <ScoreBoard src={`/images/quadrosV/` + gBoard + `.png`}></ScoreBoard>
       <VisorBoard src={`./images/quadrosV/` + gBlue + `.png`}></VisorBoard>
       <ContactNumber src="./images/contactNumber.png"></ContactNumber>
+      <Modal
+        style={{
+          display: activeModal ? 'block' : 'none',
+        }}
+        src={`./images/modal/` + modal + `.png`}
+      ></Modal>
     </Container>
   );
 };
