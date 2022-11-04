@@ -5,7 +5,7 @@ export const Header = () => {
   return (
     <Container>
       <ImagesHeader
-        src="./images/PixelArtGameRoom.gif"
+        src="./images/PixelArtGameRoom2.gif"
         alt="GameRoom"
       ></ImagesHeader>
       <Rectangle src="./images/objective.png"></Rectangle>
