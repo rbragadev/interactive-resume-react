@@ -11,6 +11,7 @@ function App() {
         width: '100vw',
         margin: 'auto',
         position: 'relative',
+        backgroundColor: 'black',
       }}
     >
       <Header></Header>
