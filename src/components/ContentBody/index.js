@@ -93,7 +93,8 @@ export const ContentBody = () => {
         value="AProjects"
       ></BarButtonProjects>
       <BarButtonContact
-        onClick={'https://linktr.ee/rbragadev'}
+        href="https://linktr.ee/rbragadev"
+        target="_blank"
       ></BarButtonContact>
       <ButtonEnglish onClick={handleSetLanguage} value="En"></ButtonEnglish>
       <ButtonPortuguese onClick={handleSetLanguage} value=""></ButtonPortuguese>

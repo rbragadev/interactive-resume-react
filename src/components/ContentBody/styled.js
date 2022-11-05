@@ -58,7 +58,7 @@ export const BarButtonProjects = styled.button`
   background-size: cover;
 `;
 
-export const BarButtonContact = styled.button`
+export const BarButtonContact = styled.a`
   position: absolute;
   width: 90px;
   height: 30px;
