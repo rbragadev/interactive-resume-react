@@ -8,7 +8,7 @@ export const Header = () => {
         src="./images/PixelArtGameRoom2.gif"
         alt="GameRoom"
       ></ImagesHeader>
-      <Rectangle src="./images/objective.png"></Rectangle>
+      <Rectangle></Rectangle>
       <div></div>
     </Container>
   );

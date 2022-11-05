@@ -11,6 +11,14 @@ export const Container = styled.div`
   margin-right: auto;
 `;
 
+export const RectangleAlert = styled.img`
+  position: absolute;
+  width: 700px;
+  height: 46px;
+  left: 0px;
+  top: -92px;
+`;
+
 export const BarButtonSkills = styled.button`
   position: absolute;
   width: 90px;
@@ -52,14 +60,40 @@ export const BarButtonProjects = styled.button`
 
 export const BarButtonContact = styled.button`
   position: absolute;
-  width: 80.01px;
-  height: 26.67px;
-  left: 572px;
-  top: 5px;
+  width: 90px;
+  height: 30px;
+  left: 569px;
+  top: 464px;
   cursor: pointer;
   background-color: #442434;
   border: none;
   background-image: url('../images/barContact.png');
+  background-size: cover;
+`;
+
+export const ButtonEnglish = styled.button`
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 572px;
+  top: 3px;
+
+  background: url('./images/en.png');
+  cursor: pointer;
+  border: none;
+  background-size: cover;
+`;
+
+export const ButtonPortuguese = styled.button`
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 615px;
+  top: 3px;
+
+  background: url('./images/pt.png');
+  cursor: pointer;
+  border: none;
   background-size: cover;
 `;
 
@@ -311,14 +345,6 @@ export const VisorBoard = styled.img`
   top: 302px;
 `;
 
-export const ContactNumber = styled.img`
-  position: absolute;
-  width: 368px;
-  height: 16px;
-  left: 39px;
-  top: 473px;
-`;
-
 export const BottomBase = styled.div`
   position: absolute;
   width: 700px;
@@ -339,4 +365,16 @@ export const Modal = styled.img`
   border: none;
   background-image: url('./images/modal/ASkills.png');
   background-size: cover;
+`;
+
+export const EasterButton = styled.button`
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 619px;
+  top: -438px;
+  border: none;
+  background-image: url('./images/buttonRedClick.gif');
+  background-size: cover;
+  cursor: pointer;
 `;

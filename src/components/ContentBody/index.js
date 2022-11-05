@@ -26,8 +26,11 @@ import {
   IconNpm,
   IconUnity,
   NamePerson,
-  ContactNumber,
   Modal,
+  ButtonEnglish,
+  ButtonPortuguese,
+  EasterButton,
+  RectangleAlert,
 } from './styled.js';
 
 export const ContentBody = () => {
@@ -36,6 +39,8 @@ export const ContentBody = () => {
   const [person, setPerson] = useState('person');
   const [modal, setModal] = useState('');
   const [activeModal, setActiveModal] = useState('');
+  const [language, setLanguage] = useState('');
+  const [easter, setEaster] = useState('');
 
   const handleChangeBoard = (text) => {
     setGBoard(text.target.value);
@@ -62,8 +67,19 @@ export const ContentBody = () => {
     setGBlue(text.target.value);
   };
 
+  const handleSetLanguage = (text) => {
+    setLanguage(text.target.value);
+  };
+
+  const handleSetEaster = (text) => {
+    setEaster(text.target.value);
+  };
+
   return (
     <Container>
+      <RectangleAlert
+        src={`./images/objective` + easter + language + `.png`}
+      ></RectangleAlert>
       <BarButtonSkills
         onClick={handleChangeBlue}
         value="ASkills"
@@ -79,6 +95,9 @@ export const ContentBody = () => {
       <BarButtonContact
         onClick={'https://linktr.ee/rbragadev'}
       ></BarButtonContact>
+      <ButtonEnglish onClick={handleSetLanguage} value="En"></ButtonEnglish>
+      <ButtonPortuguese onClick={handleSetLanguage} value=""></ButtonPortuguese>
+      <EasterButton onClick={handleSetEaster} value="Easter"></EasterButton>
       <NamePerson src="./images/namePerson.png"></NamePerson>
       <PersonPicture src={`./images/person/` + person + `.gif`}></PersonPicture>
       <DropsBox1 onClick={handleSetPerson} value="person"></DropsBox1>
@@ -98,14 +117,18 @@ export const ContentBody = () => {
       <IconReact onClick={handleChangeBoard} value="react"></IconReact>
       <IconNpm onClick={handleChangeBoard} value="npm"></IconNpm>
       <IconUnity onClick={handleChangeBoard} value="unity"></IconUnity>
-      <ScoreBoard src={`/images/quadrosV/` + gBoard + `.png`}></ScoreBoard>
-      <VisorBoard src={`./images/quadrosV/` + gBlue + `.png`}></VisorBoard>
-      <ContactNumber src="./images/contactNumber.png"></ContactNumber>
+      <ScoreBoard
+        src={`/images/quadrosV/` + gBoard + language + `.png`}
+      ></ScoreBoard>
+      <VisorBoard
+        src={`./images/quadrosV/` + gBlue + language + `.png`}
+      ></VisorBoard>
+
       <Modal
         style={{
           display: activeModal ? 'block' : 'none',
         }}
-        src={`./images/modal/` + modal + `.png`}
+        src={`./images/modal/` + modal + language + `.png`}
       ></Modal>
     </Container>
   );
